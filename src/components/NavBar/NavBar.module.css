@@ -1,8 +1,12 @@
 .siteNavigation {
   display: flex;
+  margin-right: 5rem;
 }
 
 .link {
   margin-right: 2rem;
-  
+  font-weight: bold;
+  font-size: .8rem;
+  text-decoration: none;
+  color: var(--white-color);
 }
