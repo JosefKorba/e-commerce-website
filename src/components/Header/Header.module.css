@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 16.5rem;
-  background-color: black;
-  
+  padding: 2.15rem 25.3rem;
+  background-color: var(--header-footer-background-color);
 }
