@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import data from "../../data.json";
+import Button from "../Button/Button";
 
 
 const Hero = () => {
@@ -14,12 +15,10 @@ const Hero = () => {
 
   return (
     <section className={styles.heroContainer}>
-      <article className={styles.heroText} >
-        <p>New Product</p>
-        <h1>{product.name}</h1>
-        <p>{product.heroText}</p>
-        <button>SEE PRODUCT</button>
-      </article>
+        <p>NEW PRODUCT</p>
+        <h1 className={styles.heroTitle}>{product.name}</h1>
+        <p className={styles.heroText}>{product.heroText}</p>
+        <Button color="darkOrange">SEE PRODUCT</Button>
     </section>
   );
 };
