@@ -1,7 +1,0 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2.15rem 25.3rem;
-  background-color: var(--header-footer-background-color);
-}
