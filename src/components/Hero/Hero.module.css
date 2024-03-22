@@ -1,0 +1,30 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--header-footer-background-color);
+  color: var(--white-color);
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/src/assets/images/home/desktop/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroContent {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.heroTitle {
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.heroText {
+  margin: 1.5rem 0;
+}
