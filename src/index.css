@@ -1,53 +1,57 @@
 :root {
-    --header-footer-background-color: #101010;
-    --main-background-color: #fafafa;
-    --dark-orange-color: #D87D4A;
-    --light-grey-color: #f1f1f1;
-    --accent-color: #fbaf85;
-    --white-color: #ffffff;
-    --black-color: #000000;
+  --header-footer-background-color: #101010;
+  --main-background-color: #fafafa;
+  --dark-orange-color: #d87d4a;
+  --light-grey-color: #f1f1f1;
+  --accent-color: #fbaf85;
+  --white-color: #ffffff;
+  --black-color: #000000;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
 
 h1 {
- font-size: 3.5rem;
- 
+  font-size: 3.5rem;
 }
 
 h2 {
- font-size: 2.5rem;
-   }
+  font-size: 2.5rem;
+}
 
 h3 {
- font-size: 2rem;
+  font-size: 2rem;
 }
 
 h4 {
- font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 h5 {
- font-size: 1.5rem;
-} 
+  font-size: 1.5rem;
+}
 
 h6 {
- font-size: 1.125rem;
-}   
+  font-size: 1.125rem;
+}
 
 p {
- font-size: 1rem;
+  font-size: 1rem;
 }

@@ -6,9 +6,10 @@
 .navBarContainer {
   display: flex;
   justify-content: space-between; 
-  padding: 2.15rem 0; 
+  padding: 2.15rem 0;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto; 
-  max-width: 1200px; /
 }
 
 .siteNavigation {
