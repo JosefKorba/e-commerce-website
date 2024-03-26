@@ -1,11 +1,9 @@
 .heroContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: var(--header-footer-background-color);
+  background-color: var(--main-color);
   color: var(--white-color);
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding: 12rem 1rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/src/assets/images/home/desktop/image-hero.jpg);
   background-position: center;
@@ -16,7 +14,8 @@
 .heroContent {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto; 
+  flex-direction: column;
   text-align: left;
 }
 
