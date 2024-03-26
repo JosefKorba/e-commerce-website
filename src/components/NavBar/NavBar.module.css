@@ -1,12 +1,12 @@
 .navBarBackground {
-  background-color: var(--header-footer-background-color); 
+  background-color: var(--main-color); 
   width: 100%; 
 }
 
 .navBarContainer {
   display: flex;
   justify-content: space-between; 
-  padding: 2.15rem 0;
+  padding: 2.15rem 1rem;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; 
@@ -15,12 +15,13 @@
 .siteNavigation {
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 .link {
   margin-right: 2rem; 
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 1rem;
   text-decoration: none;
   color: var(--white-color);
 }
