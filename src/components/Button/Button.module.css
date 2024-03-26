@@ -4,8 +4,9 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: bold;
  }
- /** Button colors **/
+ /** Buttons colors **/
  .darkOrange {
   background-color: var(--dark-orange-color); 
   color: var(--white-color);
