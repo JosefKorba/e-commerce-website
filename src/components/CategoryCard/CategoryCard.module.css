@@ -1,0 +1,66 @@
+.categorySection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.categoryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+    position: relative;
+    margin: 0.625rem;
+    width: 22.5rem;
+    height: 18.5rem;
+}
+.categoryCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 13.25rem; 
+    background-color: var(--light-grey-color);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.categoryImage {
+    width: 7.8125rem; 
+    height: 10rem; 
+    object-fit: cover;
+    margin: auto;
+    position: relative;
+    top: -8rem; 
+}
+
+.categoryName {
+    position: absolute;
+    top: 6.25rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--black-color);
+    
+}
+
+.shopText {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    top: 9.375rem;
+    left: 0;
+    right: 0; 
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/*** HOVER **/
+
+.shopText:hover {
+    color: var(--accent-color)
+}
