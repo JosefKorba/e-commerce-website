@@ -1,10 +1,11 @@
-import styles from './Button.module.css';
+import { Link } from 'react-router-dom';
+import styles from './Button.module.css'; 
 
-const Button = ({ children, color}) => {
+const Button = ({ path, children, color }) => {
  return (
-    <button className={`${styles.button} ${styles[color]}`}>
-      {children}
-    </button>
+    <Link to={path}>
+      <button className={`${styles.button} ${styles[color]}`}>{children}</button>
+    </Link>
  );
 };
 
