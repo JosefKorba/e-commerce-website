@@ -21,7 +21,7 @@ const Hero = () => {
         <p>NEW PRODUCT</p>
         <h1 className={styles.heroTitle}>{product.name}</h1>
         <p className={styles.heroText}>{product.heroText}</p>
-        <Button path={productPath} color="darkOrange">SEE PRODUCT</Button>
+        <Button path={productPath} color="darkOrange" ariaLabel="View Product Details">SEE PRODUCT</Button>
       </div>
     </section>
  );
