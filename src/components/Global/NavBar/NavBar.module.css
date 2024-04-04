@@ -25,3 +25,7 @@
   text-decoration: none;
   color: var(--white-color);
 }
+
+.link:hover {
+  color: var(--dark-orange-color);
+}

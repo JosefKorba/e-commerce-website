@@ -1,9 +1,6 @@
-
-import NavBar from "../components/NavBar/NavBar";
+import NavBar from "../components/Global/NavBar/NavBar";
 import Hero from "../components/Hero/Hero";
-import CategoryCard from "../components/CategoryCard/CategoryCard";
-import HomePageProductList from "../components/HomePageProductList/HomePageProductList"; 
-import data from '../data.json'; 
+import CategoryCard from "../components/Global/CategoryCard/CategoryCard";
 
 const HomePage = () => {
   return (
@@ -11,7 +8,6 @@ const HomePage = () => {
       <NavBar />
       <Hero />
       <CategoryCard />
-      <HomePageProductList products={data} /> 
     </div>
   );
 };

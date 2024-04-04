@@ -1,6 +1,6 @@
 import styles from "./NavBar.module.css";
 import Logo from "../Logo/Logo";
-import Cart from "../Cart/Cart";
+import Cart from "../../Cart/Cart";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
