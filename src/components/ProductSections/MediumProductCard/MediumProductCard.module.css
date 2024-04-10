@@ -1,0 +1,23 @@
+.mediumProductCard {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productTitleCard {
+  position: absolute;
+  bottom: 40%;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.productTitle {
+    margin-bottom: 1rem;
+}
