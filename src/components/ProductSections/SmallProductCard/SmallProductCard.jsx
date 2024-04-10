@@ -1,20 +1,27 @@
 import PropTypes from 'prop-types';
 import Button from '../../Global/Button/Button';
 import styles from './SmallProductCard.module.css';
+import data from '../../../configs/HomePageProductListConfig';
 
-const SmallProductCard = ({ title, image }) => {
+const SmallProductCard = ({ productId }) => {
+  const product = data[`product${productId}`];
+
+  const productPath = `/${product.category}/${product.slug}`;
   return (
-    <div className={styles.smallProductCard}>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <Button path="/product-details" color="darkOrange" ariaLabel="View Product Details">SEE PRODUCT</Button>
-    </div>
+    <article className={styles.smallProductCard}>
+      <div className={styles.firstSmallCard}>
+      <img className={styles.firstSmallCard} src={product.image} alt={product.title} />
+      </div>
+      <div className={styles.secondSmallCard}>
+        <h3 className={styles.productTitle}>{product.title}</h3>
+        <Button path={productPath} color="transparentColor" ariaLabel="View Product Details">SEE PRODUCT</Button>
+      </div>
+    </article>
   );
 };
 
 SmallProductCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  productId: PropTypes.number.isRequired,
 };
 
 export default SmallProductCard;
