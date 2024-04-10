@@ -1,0 +1,30 @@
+.largeProductCard {
+    width: 69.375rem; 
+    height: 35.625rem; 
+    background-color: var(--dark-orange-color); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white-color);
+    margin: 0.625rem; 
+    border-radius: 8px; 
+    padding-top: 5rem; 
+    overflow: hidden;
+}
+
+.productImage {
+    width: 25.625rem; 
+    height: 30.25rem; 
+    margin-top: 0.7rem; 
+    object-fit: cover;
+}
+
+.productInfoContainer {
+    width: 21.4375rem; 
+    height: 18.8125rem;
+    padding: 0.3125rem; 
+}
+
+.productTitle, .productDescription {
+    margin-bottom: 1rem;
+}
