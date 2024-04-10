@@ -1,22 +1,28 @@
 import PropTypes from 'prop-types';
 import Button from '../../Global/Button/Button';
-import styles from './LargeProductCard.module.css'; 
+import styles from './LargeProductCard.module.css';
+import data from '../../../configs/HomePageProductListConfig';
 
-const LargeProductCard = ({ title, description, image }) => {
- return (
-    <div className={styles.largeProductCard}>
-      <img src={image} alt={title} className={styles.productImage} /> 
-      <h3 className={styles.productTitle}>{title}</h3> 
-      <p className={styles.productDescription}>{description}</p> 
-      <Button path="/product-details" color="darkOrange" ariaLabel="View Product Details">SEE PRODUCT</Button> 
-    </div>
- );
+const LargeProductCard = ({ productId }) => {
+  const product = data[`product${productId}`];
+
+  const productPath = `/${product.category}/${product.slug}`;
+  return (
+    <article className={styles.largeProductCard}>
+      <div className={styles.productImageContainer}>
+       <img src={product.image} alt={product.title} className={styles.productImage} />
+      </div>
+      <div className={styles.productInfoContainer}>
+        <h1 className={styles.productTitle}>{product.title}</h1>
+        <p className={styles.productDescription}>{product.description}</p>
+        <Button path={productPath} color="black" ariaLabel="View Product Details">SEE PRODUCT</Button>
+      </div>
+    </article>
+  );
 };
 
 LargeProductCard.propTypes = {
- title: PropTypes.string.isRequired,
- description: PropTypes.string,
- image: PropTypes.string.isRequired,
+  productId: PropTypes.number.isRequired,
 };
 
 export default LargeProductCard;
