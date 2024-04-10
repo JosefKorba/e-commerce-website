@@ -1,20 +1,25 @@
 import PropTypes from 'prop-types';
 import Button from '../../Global/Button/Button';
 import styles from './MediumProductCard.module.css';
+import data from '../../../configs/HomePageProductListConfig';
 
-const MediumProductCard = ({ title, image }) => {
+const MediumProductCard = ({ productId }) => {
+  const product = data[`product${productId}`];
+
+  const productPath = `/${product.category}/${product.slug}`;
   return (
-    <div className={styles.mediumProductCard}>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <Button path="/product-details" color="darkOrange" ariaLabel="View Product Details">SEE PRODUCT</Button>
-    </div>
+    <article className={styles.mediumProductCard}>
+      <img className={styles.productImage} src={product.image} alt={product.title} />
+      <div className={styles.productTitleCard}>
+        <h3 className={styles.productTitle} >{product.title}</h3>
+        <Button path={productPath} color="transparentColor" ariaLabel="View Product Details">SEE PRODUCT</Button>
+      </div>
+    </article>
   );
 };
 
 MediumProductCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  productId: PropTypes.number.isRequired,
 };
 
 export default MediumProductCard;
