@@ -6,26 +6,35 @@
   text-transform: uppercase;
   font-weight: bold;
   outline: none;
- }
- /** Buttons colors **/
- .darkOrange {
-  background-color: var(--dark-orange-color); 
+}
+/** Buttons colors **/
+.darkOrange {
+  background-color: var(--dark-orange-color);
   color: var(--white-color);
- }
- 
- .black {
+}
+
+.black {
   background-color: var(--black-color);
   color: var(--white-color);
- }
+}
 
- .transparentColor {
-  background-color: none;
+.transparentColor {
+  background-color: var(--second-color);
   border: 1px solid var(--black-color);
-  color: var(--white-color);
- }
- 
- /** HOVER colors **/
+  color: var(--black-color);
+}
 
- .darkOrange:hover {
-  background-color: var(--accent-color); 
- }
+/** HOVER colors **/
+
+.darkOrange:hover {
+  background-color: var(--accent-color);
+}
+
+.black:hover {
+  background-color: var(--lighter-black-color);
+}
+
+.transparentColor:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
