@@ -1,0 +1,12 @@
+.bestAudioSection {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem auto;
+}
+
+.bestAudioContent{
+    width: 445px;
+    height: 225px;
+}
