@@ -1,0 +1,44 @@
+.footerBackground {
+  background-color: var(--main-color);
+  width: 100%;
+  color: var(--light-grey-color);
+}
+
+.footerDescriptionContainer,
+.footerNavContainer {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footerNavContainer {
+  padding: 4rem 0 2rem 0;
+}
+
+.footerDescription {
+  width: 540px;
+}
+
+.footerSocialMediaNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSocialMediaLink {
+  margin-bottom: 3rem;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.footerDescriptionCopyright {
+  margin: 3rem 0;
+}
+
+/* Hover */
+
+.footerSocialMediaLink:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
