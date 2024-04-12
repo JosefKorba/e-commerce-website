@@ -5,7 +5,7 @@ import NavBar from "../NavBar/NavBar";
 
 const Header = () => {
  return (
-    <div className={styles.headerBackground}>
+    <header className={styles.headerBackground}>
       <nav className={styles.headerContainer}>
         <Logo />
         <div className={styles.navBarContainer}>
@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <Cart />
       </nav>
-    </div>
+    </header>
  );
 };
 
