@@ -1,0 +1,11 @@
+.categoryBackground{
+ background-color: var(--main-color);
+ height: 200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.categoryTitle{
+    color: var(--white-color);
+}
