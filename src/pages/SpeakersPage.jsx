@@ -2,12 +2,14 @@ import Header from "../components/Global/Header/Header";
 import BestAudioGearSection from "../components/Global/BestAudioGearSection/BestAudioGearSection";
 import CategoryCard from "../components/Global/CategoryCard/CategoryCard";
 import Footer from "../components/Global/Footer/Footer";
+import CategoryHeader from "../components/CategoryHeader/CategoryHeader";
 
 
 const SpeakersPage = () => {
   return (
     <>
       <Header />
+      <CategoryHeader categoryName="SPEAKERS"/>
       <CategoryCard />
       <BestAudioGearSection
       imageSrc="src\assets\images\shared\desktop\image-best-gear.jpg"
