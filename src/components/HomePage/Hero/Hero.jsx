@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
-import data from "../../data.json";
-import Button from "../Global/Button/Button";
+import data from "../../../data.json";
+import Button from "../../Global/Button/Button";
 
 const Hero = () => {
  const [product, setProduct] = useState("");

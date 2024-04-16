@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import Button from '../../Global/Button/Button';
+import Button from '../../../Global/Button/Button';
 import styles from './MediumProductCard.module.css';
-import data from '../../../configs/HomePageProductListConfig';
+import data from '../../../../configs/HomePageProductListConfig';
 
 const MediumProductCard = ({ productId }) => {
   const product = data[`product${productId}`];
