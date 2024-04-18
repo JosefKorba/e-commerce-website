@@ -1,7 +1,7 @@
 import Header from "../components/Global/Header/Header";
-import Hero from "../components/Hero/Hero";
+import Hero from "../components/HomePage/Hero/Hero";
 import CategoryCard from "../components/Global/CategoryCard/CategoryCard";
-import HomePageProductList from "../components/HomePageProductList/HomePageProductList";
+import HomePageProductList from "../components/HomePage/HomePageProductList/HomePageProductList";
 import BestAudioGearSection from "../components/Global/BestAudioGearSection/BestAudioGearSection";
 import Footer from "../components/Global/Footer/Footer";
 
