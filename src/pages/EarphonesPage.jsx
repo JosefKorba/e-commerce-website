@@ -3,12 +3,16 @@ import BestAudioGearSection from "../components/Global/BestAudioGearSection/Best
 import CategoryCard from "../components/Global/CategoryCard/CategoryCard";
 import Footer from "../components/Global/Footer/Footer";
 import CategoryHeader from "../components/CategoryHeader/CategoryHeader";
+import useProducts from '../hooks/useProducts';
+import ProductList from '../components/ProductList/ProductList';
 
 const EarphonesPage = () => {
+  const products = useProducts("earphones");
   return (
     <>
       <Header />
       <CategoryHeader categoryName="EARPHONES"/>
+      <ProductList  products={products} />
       <CategoryCard />
       <BestAudioGearSection
       imageSrc="src\assets\images\shared\desktop\image-best-gear.jpg"
