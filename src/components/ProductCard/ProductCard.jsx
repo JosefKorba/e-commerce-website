@@ -1,59 +1,53 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
-import Button from '../Global/Button/Button';
-import styles from './ProductCard.module.css'; 
+import Button from "../Global/Button/Button";
+import styles from "./ProductCard.module.css";
 
-const ProductCard = ({ product, productPath }) => {
- const [screenSize, setScreenSize] = useState('desktop'); 
+const ProductCard = ({ product, productPath, index }) => {
+  const [screenSize, setScreenSize] = useState("desktop");
 
- useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 600) {
-        setScreenSize('mobile');
+        setScreenSize("mobile");
       } else if (window.innerWidth <= 900) {
-        setScreenSize('tablet');
+        setScreenSize("tablet");
       } else {
-        setScreenSize('desktop');
+        setScreenSize("desktop");
       }
     };
 
-   
     handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-    
-    window.addEventListener('resize', handleResize);
+  const imageSrc = product.categoryImage[screenSize];
 
-  
-    return () => window.removeEventListener('resize', handleResize);
- }, []); 
+  const cardClass = index % 2 === 0 ? styles.productCard : `${styles.productCard} ${styles.reverse}`;
 
- console.log("product.categoryImage:", product.categoryImage);
- console.log("screenSize:", screenSize);
-
- const imageSrc = product.categoryImage[screenSize];
-
- console.log("imageSrc:", imageSrc);
- return (
-    <div className={styles.productCard}>
+  return (
+    <div className={cardClass}>
       <img src={imageSrc} alt={product.name} className={styles.productImage} />
       <div className={styles.productInfo}>
         <h2 className={styles.productTitle}>{product.name}</h2>
         <p className={styles.productDescription}>{product.description}</p>
-        <Button path={productPath} color="darkOrange" ariaLabel="View Product Details">SEE PRODUCT</Button>
+        <Button path={productPath} color="darkOrange" ariaLabel="View Product Details">
+          SEE PRODUCT
+        </Button>
       </div>
     </div>
- );
+  );
 };
 
-
 ProductCard.propTypes = {
- product: PropTypes.shape({
+  product: PropTypes.shape({
     categoryImage: PropTypes.object.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
- }).isRequired,
- productPath: PropTypes.string.isRequired,
+  }).isRequired,
+  productPath: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default ProductCard;
-
