@@ -32,6 +32,7 @@ Button.propTypes = {
 Button.defaultProps = {
  color: 'default',
  isToggle: false,
+ path: '#', 
 };
 
 export default Button;
