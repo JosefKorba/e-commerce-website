@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import Button from "../Global/Button/Button";
 import styles from "./ProductCard.module.css";
 
@@ -24,7 +24,10 @@ const ProductCard = ({ product, productPath, index }) => {
 
   const imageSrc = product.categoryImage[screenSize];
 
-  const cardClass = index % 2 === 0 ? styles.productCard : `${styles.productCard} ${styles.reverse}`;
+  const cardClass =
+    index % 2 === 0
+      ? styles.productCard
+      : `${styles.productCard} ${styles.reverse}`;
 
   return (
     <div className={cardClass}>
@@ -32,7 +35,11 @@ const ProductCard = ({ product, productPath, index }) => {
       <div className={styles.productInfo}>
         <h2 className={styles.productTitle}>{product.name}</h2>
         <p className={styles.productDescription}>{product.description}</p>
-        <Button path={productPath} color="darkOrange" ariaLabel="View Product Details">
+        <Button
+          path={productPath}
+          color="darkOrange"
+          ariaLabel="View Product Details"
+        >
           SEE PRODUCT
         </Button>
       </div>

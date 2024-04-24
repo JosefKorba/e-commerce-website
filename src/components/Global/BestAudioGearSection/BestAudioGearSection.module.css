@@ -1,12 +1,37 @@
 .bestAudioSection {
-    max-width: 1100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 8rem auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem auto;
 }
 
-.bestAudioContent{
-    width: 445px;
-    height: 225px;
+.bestAudioContent {
+  width: 445px;
+  height: 225px;
+}
+
+@media (max-width: 1100px) {
+  .bestAudioSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bestAudioContent {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bestAudioSection {
+    padding: 0 2rem;
+  }
+
+  .bestAudioContent {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
 }

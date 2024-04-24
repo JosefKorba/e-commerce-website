@@ -1,23 +1,24 @@
 .smallProductCard {
-    width: 69.375rem; 
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
+  width: 69.375rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 }
 
-.firstSmallCard, .secondSmallCard {
-    width: 33.125rem; 
-    height: 20rem;
-    border-radius: 8px;
+.firstSmallCard,
+.secondSmallCard {
+  width: 33.125rem;
+  height: 20rem;
+  border-radius: 8px;
 }
 
 .secondSmallCard {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    background-color: var(--second-color);
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--second-color);
+  text-align: center;
 }
-.productTitle{
-    margin-bottom: 1rem;
+.productTitle {
+  margin-bottom: 1rem;
 }

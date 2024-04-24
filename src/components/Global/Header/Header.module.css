@@ -1,20 +1,20 @@
 .headerBackground {
-  background-color: var(--main-color); 
-  width: 100%; 
+  background-color: var(--main-color);
+  width: 100%;
 }
 
 .headerContainer {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 2.15rem 1rem;
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .navBarContainer {
-  flex-grow: 1; 
+  flex-grow: 1;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .siteNavigation {
@@ -24,7 +24,7 @@
 }
 
 .link {
-  margin-right: 2rem; 
+  margin-right: 2rem;
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;

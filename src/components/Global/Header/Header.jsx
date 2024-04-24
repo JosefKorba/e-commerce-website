@@ -4,7 +4,7 @@ import Cart from "../../Cart/Cart";
 import NavBar from "../NavBar/NavBar";
 
 const Header = () => {
- return (
+  return (
     <header className={styles.headerBackground}>
       <nav className={styles.headerContainer}>
         <Logo />
@@ -14,7 +14,7 @@ const Header = () => {
         <Cart />
       </nav>
     </header>
- );
+  );
 };
 
 export default Header;

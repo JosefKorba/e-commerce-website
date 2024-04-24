@@ -1,38 +1,36 @@
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import styles from './Button.module.css'; 
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import styles from "./Button.module.css";
 
 const Button = ({ path, children, color, ariaLabel, isToggle }) => {
- const buttonProps = {
+  const buttonProps = {
     className: `${styles.button} ${styles[color]}`,
     type: "button",
-    'aria-label': ariaLabel,
-    'aria-pressed': isToggle ? 'true' : undefined,
-    role: isToggle ? 'button' : undefined, 
+    "aria-label": ariaLabel,
+    "aria-pressed": isToggle ? "true" : undefined,
+    role: isToggle ? "button" : undefined,
     tabIndex: "0",
- };
+  };
 
- return (
+  return (
     <Link to={path}>
-      <button {...buttonProps}>
-        {children}
-      </button>
+      <button {...buttonProps}>{children}</button>
     </Link>
- );
+  );
 };
 
 Button.propTypes = {
- path: PropTypes.string.isRequired,
- children: PropTypes.node.isRequired,
- color: PropTypes.string,
- ariaLabel: PropTypes.string,
- isToggle: PropTypes.bool,
+  path: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string,
+  ariaLabel: PropTypes.string,
+  isToggle: PropTypes.bool,
 };
 
 Button.defaultProps = {
- color: 'default',
- isToggle: false,
- path: '#', 
+  color: "default",
+  isToggle: false,
+  path: "#",
 };
 
 export default Button;
