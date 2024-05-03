@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Header from "../components/Global/Header/Header";
 import Hero from "../components/HomePage/Hero/Hero";
 import CategoryCard from "../components/Global/CategoryCard/CategoryCard";
@@ -6,6 +7,11 @@ import BestAudioGearSection from "../components/Global/BestAudioGearSection/Best
 import Footer from "../components/Global/Footer/Footer";
 
 const HomePage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+ }, []);
+ 
   return (
     <>
       <Header />
