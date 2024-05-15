@@ -1,11 +1,17 @@
+import PropTypes from 'prop-types';
+import styles from './Features.module.css';
 
-
-const Features = () => {
+const Features = ({ features }) => {
   return (
-    <div>
-        
+    <div className={styles.features}>
+      <h3 className={styles.featuresTitle}>Features</h3>
+      <p className={styles.featuresDescription}>{features}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Features
+Features.propTypes = {
+  features: PropTypes.string.isRequired,
+};
+
+export default Features;
