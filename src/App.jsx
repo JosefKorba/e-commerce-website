@@ -4,7 +4,7 @@ import HeadphonesPage from "./pages/HeadphonesPage";
 import SpeakersPage from "./pages/SpeakersPage";
 import EarphonesPage from "./pages/EarphonesPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
-
+import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
  return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/speakers" element={<SpeakersPage />} />
         <Route path="/earphones" element={<EarphonesPage />} />
         <Route path="/:category/:productId" element={<ProductDetailPage />} />
-        
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </Router>
  );
