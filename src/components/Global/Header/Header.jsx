@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 import Logo from "../Logo/Logo";
-import Cart from "../../Cart/Cart";
+import Cart from "../../Cart/Cart/Cart";
 import NavBar from "../NavBar/NavBar";
 
 const Header = () => {
