@@ -1,0 +1,12 @@
+.productImageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.productImage {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border-radius: 0.5rem;
+}
