@@ -3,6 +3,7 @@
     "id": 1,
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
+    "cartImage": "../src/assets/images/cart/image-yx1-earphones.jpg",
     "image": {
       "mobile": "./assets/product-yx1-earphones/mobile/image-product.jpg",
       "tablet": "./assets/product-yx1-earphones/tablet/image-product.jpg",
@@ -91,6 +92,7 @@
     "id": 2,
     "slug": "xx59-headphones",
     "name": "XX59 Headphones",
+    "cartImage": "../src/assets/images/cart/image-xx59-headphones.jpg",
     "image": {
       "mobile": "./assets/product-xx59-headphones/mobile/image-product.jpg",
       "tablet": "./assets/product-xx59-headphones/tablet/image-product.jpg",
@@ -175,6 +177,7 @@
     "id": 3,
     "slug": "xx99-mark-one-headphones",
     "name": "XX99 Mark I Headphones",
+    "cartImage": "../src/assets/images/cart/image-xx99-mark-one-headphones.jpg",
     "image": {
       "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
       "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
@@ -259,6 +262,7 @@
     "id": 4,
     "slug": "xx99-mark-two-headphones",
     "name": "XX99 Mark II Headphones",
+    "cartImage": "../src/assets/images/cart/image-xx99-mark-two-headphones.jpg",
     "image": {
       "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
       "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
@@ -348,6 +352,7 @@
     "id": 5,
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
+    "cartImage": "../src/assets/images/cart/image-zx7-speaker.jpg",
     "image": {
       "mobile": "./assets/product-zx7-speaker/mobile/image-product.jpg",
       "tablet": "./assets/product-zx7-speaker/tablet/image-product.jpg",
@@ -436,6 +441,7 @@
     "id": 6,
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
+    "cartImage": "../src/assets/images/cart/image-zx9-speaker.jpg",
     "image": {
       "mobile": "./assets/product-zx9-speaker/mobile/image-product.jpg",
       "tablet": "./assets/product-zx9-speaker/tablet/image-product.jpg",
@@ -475,19 +481,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
+        "mobile": "../src/assets/images/product-zx9-speaker/mobile/image-gallery-1.jpg",
+        "tablet": "../src/assets/images/product-zx9-speaker/tablet/image-gallery-1.jpg",
+        "desktop": "../src/assets/images/product-zx9-speaker/desktop/image-gallery-1.jpg"
       },
       "second": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
+        "mobile": "../src/assets/images/product-zx9-speaker/mobile/image-gallery-2.jpg",
+        "tablet": "../src/assets/images/product-zx9-speaker/tablet/image-gallery-2.jpg",
+        "desktop": "../src/assets/images/product-zx9-speaker/desktop/image-gallery-2.jpg"
       },
       "third": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
+        "mobile": "../src/assets/images/product-zx9-speaker/mobile/image-gallery-3.jpg",
+        "tablet": "../src/assets/images/product-zx9-speaker/tablet/image-gallery-3.jpg",
+        "desktop": "../src/assets/images/product-zx9-speaker/desktop/image-gallery-3.jpg"
       }
     },
     "others": [
