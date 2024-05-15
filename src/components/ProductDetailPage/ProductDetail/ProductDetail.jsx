@@ -1,8 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import styles from './ProductDetail.module.css';
 import PropTypes from 'prop-types';
-import { useCart } from '../../Cart/CartContext/CartContext';
-
+import useCart from '../../../hooks/useCart';
 
 const getScreenSize = () => {
     if (window.innerWidth <= 600) return "mobile";
@@ -13,7 +12,7 @@ const getScreenSize = () => {
 const ProductDetail = ({ product }) => {
     const [screenSize, setScreenSize] = useState(getScreenSize());
     const [count, setCount] = useState(1);
-    const { addToCart } = useCart();  
+    const { addToCart, isItemInCart, getItemQuantity, updateCartItem } = useCart();
 
     const handleResize = useCallback(() => {
         setScreenSize(getScreenSize());
@@ -25,7 +24,12 @@ const ProductDetail = ({ product }) => {
     }, [handleResize]);
 
     const handleAddToCart = () => {
-        addToCart({ ...product, quantity: count });
+        if (isItemInCart(product.id)) {
+            const currentQuantity = getItemQuantity(product.id);
+            updateCartItem({ ...product, quantity: currentQuantity + count, image: product.image });
+        } else {
+            addToCart({ ...product, quantity: count, image: product.image });
+        }
     };
 
     if (!product) {
@@ -43,9 +47,9 @@ const ProductDetail = ({ product }) => {
                 <p className={styles.productDescription}>{description}</p>
                 <p className={styles.productPrice}>${price}</p>
                 <div className={styles.counterWrapper}>
-                    <button onClick={() => setCount(Math.max(count - 1, 1))}>-</button>
-                    <span>{count}</span>
-                    <button onClick={() => setCount(count + 1)}>+</button>
+                    <button className={styles.counterButton} onClick={() => setCount(Math.max(count - 1, 1))}>-</button>
+                    <span className={styles.counterSpan}>{count}</span>
+                    <button className={styles.counterButton} onClick={() => setCount(count + 1)}>+</button>
                 </div>
                 <button className={styles.addToCartButton} onClick={handleAddToCart}>Add to cart</button>
             </div>
