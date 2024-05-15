@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
-import Button from "../Global/Button/Button";
+import Button from "../../Global/Button/Button";
 import styles from "./ProductCard.module.css";
 
 const getScreenSize = () => {

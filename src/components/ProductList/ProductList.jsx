@@ -1,4 +1,4 @@
-import ProductCard from "../ProductCard/ProductCard";
+import ProductCard from "../../ProductCard/ProductCard";
 import PropTypes from "prop-types";
 
 const ProductList = ({ products }) => {
