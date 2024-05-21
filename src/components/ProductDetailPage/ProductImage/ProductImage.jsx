@@ -23,21 +23,20 @@ const ProductImage = ({ productSlug }) => {
 
   useEffect(() => {
     const product = productsData.find(product => product.slug === productSlug);
-    console.log('Product:', product); // Debugging line
     if (product && product.gallery) {
       const galleryImages = Object.values(product.gallery).map(galleryItem => galleryItem[screenSize]);
-      console.log('Gallery Images:', galleryImages); // Debugging line
       setImages(galleryImages);
-    } else {
-      console.log('Product not found or no gallery available');
     }
   }, [productSlug, screenSize]);
 
   return (
-    <div className={styles.content}>
-      {images.map((src, index) => (
-        <img key={index} src={src} alt={`Gallery Image ${index + 1}`} className={styles.galleryImage} />
-      ))}
+    <div className={styles.galleryContainer}>
+      <div className={styles.galleryImageSmallContainer}>
+        {images.slice(0, 2).map((src, index) => (
+          <img key={index} src={src} alt={`Gallery Image ${index + 1}`} className={styles.galleryImageSmall} />
+        ))}
+      </div>
+      <img src={images[2]} alt="Gallery Image 3" className={styles.galleryImage} />
     </div>
   );
 };
