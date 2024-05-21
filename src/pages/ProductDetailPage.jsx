@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom';
 import GoBackButton from '../components/Global/GoBackButton/GoBackButton';
 import Header from '../components/Global/Header/Header';
 import ProductDetail from "../components/ProductDetailPage/ProductDetail/ProductDetail";
-import Features from "../components/ProductDetailPage/Features/Features";
-import Content from "../components/ProductDetailPage/Content/Content";
+import FeaturesContentWrapper from "../components/ProductDetailPage/FeaturesContentWrapper/FeaturesContentWrapper";
 import ProductImage from "../components/ProductDetailPage/ProductImage/ProductImage";
 import Recommendations from "../components/ProductDetailPage/Recommendations/Recommendations";
 import CategoryCard from "../components/Global/CategoryCard/CategoryCard";
@@ -29,10 +28,9 @@ const ProductDetailPage = () => {
       <Header />
       <GoBackButton />
       <ProductDetail product={product} />
-      <Features features={product.features} />
-      <Content items={product.includes} />
+      <FeaturesContentWrapper features={product.features} items={product.includes} />
       <ProductImage productSlug={productId} />
-      <Recommendations recommendations={product.recommendations} />
+      <Recommendations recommendations={product.others} />
       <CategoryCard />
       <BestAudioGearSection
         imageSrc="../src/assets/images/shared/desktop/image-best-gear.jpg"
