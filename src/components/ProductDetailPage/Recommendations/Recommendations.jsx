@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import styles from './Recommendations.module.css';
+import PropTypes from 'prop-types';
 
 const Recommendations = ({ recommendations }) => {
   const navigate = useNavigate();
@@ -35,6 +36,10 @@ const Recommendations = ({ recommendations }) => {
       </div>
     </div>
   );
+};
+
+Recommendations.propTypes = {
+  recommendations: PropTypes.array.isRequired,
 };
 
 export default Recommendations;

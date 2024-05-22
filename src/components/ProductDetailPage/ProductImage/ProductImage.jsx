@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback } from 'react';
 import styles from './ProductImage.module.css';
 import productsData from '../../../data.json';
+import PropTypes from 'prop-types';
 
 const getScreenSize = () => {
-  if (window.innerWidth <= 600) return "mobile";
-  if (window.innerWidth <= 900) return "tablet";
+  if (window.innerWidth <= 767) return "mobile";
+  if (window.innerWidth <= 1024) return "tablet";
   return "desktop";
 };
 
@@ -39,6 +40,10 @@ const ProductImage = ({ productSlug }) => {
       <img src={images[2]} alt="Gallery Image 3" className={styles.galleryImage} />
     </div>
   );
+};
+
+ProductImage.propTypes = {
+  productSlug: PropTypes.string.isRequired,
 };
 
 export default ProductImage;

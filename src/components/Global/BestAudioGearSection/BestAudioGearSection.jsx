@@ -1,4 +1,5 @@
 import styles from "./BestAudioGearSection.module.css";
+import PropTypes from "prop-types";
 
 const BestAudioGearSection = ({ imageSrc, title, description }) => (
   <section className={styles.bestAudioSection}>
@@ -12,5 +13,12 @@ const BestAudioGearSection = ({ imageSrc, title, description }) => (
     <img className={styles.bestAudioImage} src={imageSrc} alt={title} />
   </section>
 );
+
+BestAudioGearSection.propTypes = {
+  imageSrc: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}
+
 
 export default BestAudioGearSection;
