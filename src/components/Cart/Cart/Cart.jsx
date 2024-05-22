@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import useCart from '../../../hooks/useCart';
+import { useState } from "react";
+import useCart from "../../../hooks/useCart";
 import styles from "./Cart.module.css";
 import cartImage from "../../../assets/images/shared/desktop/icon-cart.svg";
-import CartDropdown from '../CartDropdown/CartDropdown';
+import CartDropdown from "../CartDropdown/CartDropdown";
 
 const Cart = () => {
   const { cartItems } = useCart();
@@ -10,10 +10,7 @@ const Cart = () => {
 
   const toggleCartDropdown = () => setIsVisible(!isVisible);
 
-  const handleCheckout = () => {
-    
-   
-  };
+  const handleCheckout = () => {};
 
   return (
     <div className={styles.cartIcon}>
@@ -25,7 +22,9 @@ const Cart = () => {
           </span>
         )}
       </button>
-      {isVisible && <CartDropdown cartItems={cartItems} onCheckout={handleCheckout} />}
+      {isVisible && (
+        <CartDropdown cartItems={cartItems} onCheckout={handleCheckout} />
+      )}
     </div>
   );
 };
