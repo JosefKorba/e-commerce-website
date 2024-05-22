@@ -21,3 +21,62 @@
 .productTitle {
   margin-bottom: 1rem;
 }
+
+/* Media Queries for Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mediumProductCard {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .productImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .productTitleCard {
+    width: 100%;
+    text-align: center;
+    position: static;
+    transform: none;
+  }
+
+  .productTitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 767px) {
+  .mediumProductCard {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin: 1 auto;
+  }
+
+  .productImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .productTitleCard {
+    width: 100%;
+    text-align: center;
+    position: static;
+    transform: none;
+  }
+
+  .productTitle {
+    font-size: 1.25rem;
+  }
+
+  .button {
+    font-size: 0.875rem;
+  }
+}

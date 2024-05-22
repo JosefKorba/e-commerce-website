@@ -1,3 +1,26 @@
 .logo {
   margin-right: auto;
 }
+
+/* Media Queries for Tablet View */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    margin: 0 auto; /* Zajištění, že logo bude zarovnáno na střed */
+  }
+}
+
+/* Media Queries for Mobile View */
+
+@media (max-width: 767px) {
+  .logo {
+    display: flex; /* Použití flexboxu */
+    justify-content: center; /* Zarovnání na střed */
+    width: 100%; /* Šířka 100% */
+    margin-bottom: 1rem; /* Margin bottom pro oddělení od ostatních prvků */
+  }
+
+  .logo img {
+    margin: 0 auto; /* Zarovnání obrázku na střed */
+  }
+}
