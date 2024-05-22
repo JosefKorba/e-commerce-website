@@ -1,0 +1,24 @@
+.BackButton {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    background: none;
+    border: none;
+    color: rgb(134, 132, 132); 
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .BackButton:hover {
+    color: var(--accent-color); 
+  }
+  
+  @media (max-width: 1024px) {
+    .BackButton {
+      display: none; 
+    }
+  }
