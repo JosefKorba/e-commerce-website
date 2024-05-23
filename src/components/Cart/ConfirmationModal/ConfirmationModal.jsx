@@ -13,7 +13,7 @@ const ConfirmationModal = ({ isOpen, onClose, orderDetails }) => {
           <div className={styles.items}>
             {orderDetails.items.map((item, index) => (
               <div key={index} className={styles.item}>
-                <img src={item.image} alt={item.name} className={styles.itemImage} />
+                <img src={item.cartImage} alt={item.name} className={styles.itemImage} /> 
                 <div className={styles.itemDetails}>
                   <p className={styles.itemName}>{item.name}</p>
                   <p className={styles.itemQuantity}>x{item.quantity}</p>
@@ -52,7 +52,7 @@ ConfirmationModal.propTypes = {
   onClose: PropTypes.func.isRequired,
   orderDetails: PropTypes.shape({
     items: PropTypes.arrayOf(PropTypes.shape({
-      image: PropTypes.string.isRequired,
+      cartImage: PropTypes.string.isRequired, 
       name: PropTypes.string.isRequired,
       quantity: PropTypes.number.isRequired,
       price: PropTypes.number.isRequired,
