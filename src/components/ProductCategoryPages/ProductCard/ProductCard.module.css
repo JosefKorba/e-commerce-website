@@ -1,18 +1,10 @@
-:root {
-  --padding-small: 0.5rem;
-  --margin-small: 3rem;
-  --padding-large: 1rem;
-  --margin-large: 7rem;
-  --gap: 2rem;
-}
-
 .productCard {
   display: flex;
   flex-direction: column;
-  padding: var(--padding-large);
+  padding: 1rem; 
   max-width: 1200px;
   width: 100%;
-  margin: var(--margin-large) auto;
+  margin: 7rem auto; 
   transition: all 0.3s ease;
 }
 
@@ -47,7 +39,7 @@
 @media (min-width: 961px) {
   .productCard {
     flex-direction: row;
-    gap: var(--gap);
+    gap: 2rem;
   }
 }
 
@@ -81,8 +73,8 @@
   .productCard {
     flex-direction: column;
     gap: 1rem;
-    padding: var(--padding-small);
-    margin: var(--margin-small) auto;
+    padding: 0.5rem; 
+    margin: 3rem auto; 
   }
 
   .productImage {
