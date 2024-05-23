@@ -25,13 +25,13 @@
 }
 
 /* Media Queries for Tablet View */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1120px) {
   .smallProductCard {
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 3rem;
   }
 
   .firstSmallCard,

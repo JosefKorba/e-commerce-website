@@ -36,12 +36,12 @@
 }
 
 /* Media Queries for Tablet View */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1120px) {
   .largeProductCard {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 90%;
-    height: auto;
+    height: 60%;
     padding: 2rem;
     margin: 1rem auto;
   }
@@ -50,11 +50,15 @@
     width: 80%;
     height: auto;
     margin-top: 0;
+    display: flex;
+    justify-content: center; 
   }
 
   .productImage {
-    width: 100%;
-    height: auto;
+    width: 70%;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
   }
 
   .productInfoContainer {
@@ -86,11 +90,15 @@
     width: 100%;
     height: auto;
     margin-top: 0;
+    display: flex;
+    justify-content: center; 
   }
 
   .productImage {
-    width: 100%;
-    height: auto;
+    width: 80%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
   }
 
   .productInfoContainer {
