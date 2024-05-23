@@ -1,9 +1,9 @@
 import Logo from "../Logo/Logo";
 import NavBar from "../NavBar/NavBar";
 import styles from "./Footer.module.css";
-import facebookIcon from "../../../assets/images/shared/desktop/icon-facebook.svg";
-import twitterIcon from "../../../assets/images/shared/desktop/icon-twitter.svg";
-import instagramIcon from "../../../assets/images/shared/desktop/icon-instagram.svg";
+import facebookIcon from "/images/shared/desktop/icon-facebook.svg";
+import twitterIcon from "/public/images/shared/desktop/icon-twitter.svg";
+import instagramIcon from "/public/images/shared/desktop/icon-instagram.svg";
 
 const Footer = () => {
   return (

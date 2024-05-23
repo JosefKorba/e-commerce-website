@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useCart from "../../../hooks/useCart";
 import styles from "./Cart.module.css";
-import cartImage from "../../../assets/images/shared/desktop/icon-cart.svg";
+import cartImage from "/images/shared/desktop/icon-cart.svg";
 import CartDropdown from "../CartDropdown/CartDropdown";
 
 const Cart = () => {
